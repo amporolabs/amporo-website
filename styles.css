@@ -54,9 +54,12 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22e
 
 .landing {
   min-height: calc(100vh - 164px);
-  display: grid;
-  place-items: center;
-  padding: 72px 24px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  padding: 72px 24px 100px;
 }
 
 .hero { width: min(820px, 100%); text-align: center; }
@@ -88,6 +91,37 @@ h1 {
 
 .contact-line { margin: 0; font-size: 15px; font-weight: 650; }
 
+.principles {
+  width: min(880px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  text-align: left;
+}
+
+.principle-card {
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.principle-card h2 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.principle-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.principle-card em {
+  font-style: italic;
+}
+
 .site-footer {
   color: var(--muted);
   font-size: 12px;
@@ -113,7 +147,8 @@ h1 {
 
 @media (max-width: 640px) {
   .site-header { padding: 22px 20px; }
-  .landing { min-height: calc(100vh - 190px); padding: 64px 20px 90px; }
+  .landing { min-height: calc(100vh - 190px); padding: 56px 20px 80px; gap: 48px; }
+  .principles { grid-template-columns: 1fr; gap: 24px; }
   h1 { font-size: clamp(43px, 14vw, 64px); }
   .site-footer { align-items: flex-start; gap: 22px; padding: 24px 20px; }
   .site-footer nav { flex-direction: column; gap: 10px; text-align: right; }
@@ -121,6 +156,7 @@ h1 {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .hero { animation: rise 650ms ease-out both; }
+  .hero, .principles { animation: rise 650ms ease-out both; }
+  .principles { animation-delay: 80ms; }
   @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
 }

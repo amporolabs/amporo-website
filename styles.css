@@ -131,6 +131,10 @@ a:hover {
   justify-content: space-between;
 }
 
+.landing-header {
+  justify-content: flex-end;
+}
+
 .wordmark {
   display: inline-flex;
   align-items: center;
@@ -232,6 +236,37 @@ a:hover {
 .hero {
   width: min(820px, 100%);
   text-align: center;
+}
+
+.hero-logo-wrap {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.hero-brand:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.hero-logo-mark {
+  display: block;
+}
+
+.hero-brand-name {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  color: var(--ink);
 }
 
 .eyebrow,
@@ -455,6 +490,14 @@ h1 {
 @media (max-width: 768px) {
   .site-header {
     padding: 20px 20px;
+  }
+
+  .hero-logo-wrap {
+    margin-bottom: 20px;
+  }
+
+  .hero-brand-name {
+    font-size: 18px;
   }
 
   .landing {

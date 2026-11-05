@@ -239,7 +239,7 @@ a:hover {
 }
 
 .hero-logo-wrap {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   display: flex;
   justify-content: center;
 }
@@ -247,7 +247,7 @@ a:hover {
 .hero-brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
   color: var(--ink);
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -255,17 +255,19 @@ a:hover {
 
 .hero-brand:hover {
   opacity: 0.85;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .hero-logo-mark {
   display: block;
+  width: 48px;
+  height: 46px;
 }
 
 .hero-brand-name {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 650;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
   color: var(--ink);
 }
 
@@ -493,11 +495,16 @@ h1 {
   }
 
   .hero-logo-wrap {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  .hero-logo-mark {
+    width: 38px;
+    height: 36px;
   }
 
   .hero-brand-name {
-    font-size: 18px;
+    font-size: 21px;
   }
 
   .landing {

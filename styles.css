@@ -239,7 +239,7 @@ a:hover {
 }
 
 .hero-logo-wrap {
-  margin-bottom: 28px;
+  margin-bottom: clamp(20px, 2.5vw, 34px);
   display: flex;
   justify-content: center;
 }
@@ -247,7 +247,7 @@ a:hover {
 .hero-brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: clamp(12px, calc(9.5px + 0.65vw), 22px);
   text-decoration: none;
   color: var(--ink);
   transition: opacity 0.18s ease, transform 0.18s ease;
@@ -260,34 +260,37 @@ a:hover {
 
 .hero-logo-mark {
   display: block;
-  width: 48px;
-  height: 46px;
+  width: clamp(40px, calc(32px + 2.7vw), 84px);
+  height: auto;
+  aspect-ratio: 242 / 232;
+  flex-shrink: 0;
 }
 
 .hero-brand-name {
-  font-size: 25px;
+  font-size: clamp(21px, calc(16.5px + 1.45vw), 44px);
   font-weight: 650;
   letter-spacing: -0.03em;
+  line-height: 1.1;
   color: var(--ink);
 }
 
 .eyebrow,
 .legal-note {
   color: var(--accent);
-  font-size: 12.5px;
+  font-size: clamp(11.5px, calc(10.5px + 0.25vw), 13px);
   font-weight: 650;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin: 0 0 16px;
+  margin: 0 0 clamp(12px, 1.4vw, 18px);
   display: inline-block;
 }
 
 h1 {
-  margin: 16px 0 24px;
-  font-size: clamp(44px, 6.8vw, 82px);
-  font-weight: 520;
-  line-height: 1.02;
-  letter-spacing: -0.045em;
+  margin: clamp(12px, 1.6vw, 20px) 0 clamp(16px, 2vw, 24px);
+  font-size: clamp(28px, calc(24px + 1.4vw), 50px);
+  font-weight: 530;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
   color: var(--ink);
 }
 
@@ -295,7 +298,7 @@ h1 {
   width: min(600px, 100%);
   margin: 0 auto;
   color: var(--muted);
-  font-size: clamp(17px, 2vw, 20.5px);
+  font-size: clamp(16px, calc(15px + 0.35vw), 19px);
   line-height: 1.6;
   font-weight: 400;
 }
@@ -405,12 +408,12 @@ h1 {
 
 .legal-page h1 {
   margin: 16px 0 16px;
-  font-size: clamp(42px, 7vw, 70px);
-  letter-spacing: -0.04em;
+  font-size: clamp(32px, calc(26px + 1.4vw), 48px);
+  letter-spacing: -0.035em;
 }
 
 .legal-page .legal-note {
-  margin-bottom: 48px;
+  margin-bottom: clamp(28px, 3.5vw, 44px);
 }
 
 .legal-page section {
@@ -492,19 +495,6 @@ h1 {
 @media (max-width: 768px) {
   .site-header {
     padding: 20px 20px;
-  }
-
-  .hero-logo-wrap {
-    margin-bottom: 22px;
-  }
-
-  .hero-logo-mark {
-    width: 38px;
-    height: 36px;
-  }
-
-  .hero-brand-name {
-    font-size: 21px;
   }
 
   .landing {

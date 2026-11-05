@@ -5,12 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Privacy Policy — Amporo Labs GmbH</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('amporo-theme');
+        if (saved) document.documentElement.setAttribute('data-theme', saved);
+      } catch(e) {}
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Amporo Labs home"><span class="mark" aria-hidden="true">A</span><span>Amporo Labs</span></a>
+    <a class="wordmark" href="index.html" aria-label="Amporo Labs home">
+      <svg class="wordmark-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 232" fill="none" width="28" height="27" aria-hidden="true">
+        <path d="M132 16 L142 16 L236 216 L204 216 L137 122 L70 216 L6 216 Z" fill="#CBB7A1" stroke="#CBB7A1" stroke-width="2" stroke-linejoin="round"/>
+        <polygon points="137,148 173,216 101,216" fill="#426382" stroke="#426382" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span>Amporo Labs</span>
+    </a>
+    <div class="header-actions">
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle color theme" title="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
   </header>
+
   <main class="legal-page">
     <a class="back" href="index.html">← Home</a>
     <h1>Privacy Policy</h1>
@@ -18,7 +52,14 @@
 
     <section>
       <h2>1. Controller</h2>
-      <p>Amporo Labs GmbH<br>Leopoldstraße 2-8<br>32051 Herford, Germany<br>Email: amporo.labs@gmail.com</p>
+      <p>Amporo Labs GmbH<br>
+        <img src="contact-address-light.png" alt="Leopoldstraße 2-8, 32051 Herford, Germany" class="anti-scrape-img anti-scrape-address anti-scrape-light" width="128" height="67" loading="lazy">
+        <img src="contact-address-dark.png" alt="Leopoldstraße 2-8, 32051 Herford, Germany" class="anti-scrape-img anti-scrape-address anti-scrape-dark" width="128" height="67" loading="lazy">
+      </p>
+      <p class="contact-email-row" style="margin-top: 14px;">Email:
+        <img src="contact-email-light.png" alt="amporo.labs [at] gmail.com" class="anti-scrape-img anti-scrape-email anti-scrape-light" width="175" height="16" loading="lazy">
+        <img src="contact-email-dark.png" alt="amporo.labs [at] gmail.com" class="anti-scrape-img anti-scrape-email anti-scrape-dark" width="175" height="16" loading="lazy">
+      </p>
     </section>
     <section>
       <h2>2. Hosting and server logs</h2>
@@ -42,7 +83,15 @@
       <p>We may update this privacy policy when the website, our processing activities or legal requirements change.</p>
     </section>
   </main>
-  <footer class="site-footer"><span>© <span id="year"></span> Amporo Labs GmbH</span><nav aria-label="Legal"><a href="imprint.html">Imprint</a><a href="privacy.html" aria-current="page">Privacy Policy</a></nav></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Amporo Labs GmbH</span>
+    <nav aria-label="Legal">
+      <a href="imprint.html">Imprint</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+  </footer>
+
+  <script src="site.js"></script>
 </body>
 </html>

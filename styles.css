@@ -460,34 +460,23 @@ h1 {
   width: 174.5px;
   height: 16px;
   max-width: 100%;
-  vertical-align: -2.5px;
-  margin-left: 2px;
-}
-
-.contact-email-row {
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
+  margin-top: 4px;
 }
 
 /* Anti-Scrape Light / Dark Switching */
 .anti-scrape-dark { display: none; }
-.anti-scrape-light { display: inline-block; }
-.anti-scrape-address.anti-scrape-light { display: block; }
+.anti-scrape-light { display: block; }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .anti-scrape-light { display: none; }
-  :root:not([data-theme="light"]) .anti-scrape-dark { display: inline-block; }
-  :root:not([data-theme="light"]) .anti-scrape-address.anti-scrape-dark { display: block; }
+  :root:not([data-theme="light"]) .anti-scrape-dark { display: block; }
 }
 
 :root[data-theme="dark"] .anti-scrape-light { display: none; }
-:root[data-theme="dark"] .anti-scrape-dark { display: inline-block; }
-:root[data-theme="dark"] .anti-scrape-address.anti-scrape-dark { display: block; }
+:root[data-theme="dark"] .anti-scrape-dark { display: block; }
 
 :root[data-theme="light"] .anti-scrape-dark { display: none; }
-:root[data-theme="light"] .anti-scrape-light { display: inline-block; }
-:root[data-theme="light"] .anti-scrape-address.anti-scrape-light { display: block; }
+:root[data-theme="light"] .anti-scrape-light { display: block; }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

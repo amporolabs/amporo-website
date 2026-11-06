@@ -24,6 +24,7 @@ A modern, minimal, high-craft website for Amporo Labs GmbH with a landing page, 
 - `privacy.html`: English privacy policy (GDPR).
 - `de/index.html`: German landing page.
 - `de/impressum.html`: German legal provider identification pursuant to § 5 DDG.
+- `de/datenschutz.html`: German privacy policy (DSGVO).
 - `styles.css`: Complete responsive design system, theme tokens, and localization styles.
 - `site.js`: Theme switching, language persistence, visitor hint toast, and dynamic footer year.
 - `logo.svg`, `logo-mark.svg`, `favicon.svg`: Vector brand assets.

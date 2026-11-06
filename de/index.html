@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Amporo Labs GmbH ist ein Produktstudio und Engineering-Lab mit Sitz in München für hochgradig nützliche, reibungslose Technologie.">
+  <title>Amporo Labs GmbH — Product Studio &amp; Engineering Lab</title>
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="alternate" hreflang="de" href="./">
+  <link rel="alternate" hreflang="x-default" href="../">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('amporo-theme');
+        if (saved) document.documentElement.setAttribute('data-theme', saved);
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header landing-header">
+    <div class="header-actions">
+      <nav class="lang-switcher" aria-label="Sprache">
+        <a class="lang-opt" href="../" data-lang="en" aria-label="Switch to English">EN</a>
+        <span class="lang-divider" aria-hidden="true"></span>
+        <span class="lang-opt is-active" aria-current="true">DE</span>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Farbschema wechseln" title="Farbschema wechseln">
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="landing">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-logo-wrap">
+        <a class="hero-brand" href="index.html" aria-label="Amporo Labs Startseite">
+          <svg class="hero-logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 242 232" fill="none" aria-hidden="true">
+            <path d="M132 16 L142 16 L236 216 L204 216 L137 122 L70 216 L6 216 Z" fill="#CBB7A1" stroke="#CBB7A1" stroke-width="2" stroke-linejoin="round"/>
+            <polygon points="137,148 173,216 101,216" fill="#426382" stroke="#426382" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          <span class="hero-brand-name">Amporo Labs</span>
+        </a>
+      </div>
+
+      <p class="eyebrow">Product Studio &amp; Engineering Lab</p>
+      <h1 id="hero-title">Software, die einfach Sinn ergibt.</h1>
+      <p class="intro">Amporo Labs ist ein Produktstudio mit Sitz in München. Wir entwickeln hochgradig nützliche, reibungslose Technologie – von fokussiertem B2B-SaaS und alltäglichen Micro-Utilities bis hin zu maßgeschneidertem Engineering.</p>
+    </section>
+
+    <section class="principles" aria-label="Grundprinzipien">
+      <article class="principle-card">
+        <h2>Selbsterklärendes Design</h2>
+        <p>Nach Steve Krugs <em>„Don't make me think“</em>-Prinzip: intuitive, selbsterklärende Nutzeroberflächen ganz ohne Lernkurve.</p>
+      </article>
+      <article class="principle-card">
+        <h2>Zero Bloat</h2>
+        <p>Fokussierte Produkte für einen klaren Zweck, die echte Probleme hervorragend lösen – ohne Feature Creep oder kompliziertes Onboarding.</p>
+      </article>
+      <article class="principle-card">
+        <h2>Engineered for Speed</h2>
+        <p>Schnelle, taktile Nutzererlebnisse auf Basis einer resilienten, modernen Architektur für höchste Performance.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Amporo Labs GmbH</span>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="../privacy.html">Privacy Policy</a>
+    </nav>
+  </footer>
+
+  <script src="../site.js"></script>
+</body>
+</html>

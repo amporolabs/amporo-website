@@ -46,4 +46,54 @@
       } catch (err) {}
     });
   }
+
+  // Language switcher preference handling
+  var langLinks = document.querySelectorAll('.lang-switcher a.lang-opt');
+  langLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+      var lang = link.getAttribute('data-lang');
+      if (lang) {
+        try {
+          localStorage.setItem('amporo-lang', lang);
+        } catch (e) {}
+      }
+    });
+  });
+
+  // German locale suggestion toast on English homepage
+  var langToast = document.getElementById('lang-toast');
+  if (langToast) {
+    try {
+      var savedLang = localStorage.getItem('amporo-lang');
+      var dismissed = sessionStorage.getItem('amporo-lang-dismissed');
+      var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+      var isGermanBrowser = browserLang.indexOf('de') === 0;
+
+      // Show toast if visitor hasn't chosen English, hasn't dismissed toast, and has German browser
+      if (!savedLang && !dismissed && isGermanBrowser) {
+        setTimeout(function () {
+          langToast.classList.add('is-visible');
+        }, 600);
+      }
+
+      var toastClose = document.getElementById('lang-toast-close');
+      if (toastClose) {
+        toastClose.addEventListener('click', function () {
+          langToast.classList.remove('is-visible');
+          try {
+            sessionStorage.setItem('amporo-lang-dismissed', 'true');
+          } catch (e) {}
+        });
+      }
+
+      var toastLink = langToast.querySelector('.lang-toast-link');
+      if (toastLink) {
+        toastLink.addEventListener('click', function () {
+          try {
+            localStorage.setItem('amporo-lang', 'de');
+          } catch (e) {}
+        });
+      }
+    } catch (e) {}
+  }
 })();

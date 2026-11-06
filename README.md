@@ -25,6 +25,9 @@ A modern, minimal, high-craft website for Amporo Labs GmbH with a landing page, 
 - `de/index.html`: German landing page.
 - `de/impressum.html`: German legal provider identification pursuant to § 5 DDG.
 - `de/datenschutz.html`: German privacy policy (DSGVO).
+- `404.html`: Custom branded not-found page.
+- `CNAME`: Custom domain configuration for GitHub Pages (`amporolabs.com`).
+- `.nojekyll`: Disables Jekyll processing on GitHub Pages.
 - `styles.css`: Complete responsive design system, theme tokens, and localization styles.
 - `site.js`: Theme switching, language persistence, visitor hint toast, and dynamic footer year.
 - `logo.svg`, `logo-mark.svg`, `favicon.svg`: Vector brand assets.

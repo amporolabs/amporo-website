@@ -18,11 +18,14 @@
   }
 
   function updateAria(theme) {
+    var isGerman = (document.documentElement.getAttribute('lang') || '').toLowerCase().indexOf('de') === 0;
     toggleBtn.setAttribute(
       'aria-label',
-      theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'
+      isGerman
+        ? (theme === 'dark' ? 'Zu hellem Design wechseln' : 'Zu dunklem Design wechseln')
+        : (theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme')
     );
-    toggleBtn.setAttribute('title', theme === 'dark' ? 'Light mode' : 'Dark mode');
+    toggleBtn.removeAttribute('title');
   }
 
   updateAria(getEffectiveTheme());

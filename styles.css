@@ -129,7 +129,7 @@ a:hover {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px 32px;
+  padding: clamp(16px, 2vh, 24px) 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -278,20 +278,20 @@ a.lang-opt:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 64px;
-  padding: 60px 24px 84px;
+  gap: clamp(18px, 2.8vh, 38px);
+  padding: clamp(12px, 2vh, 28px) 24px clamp(14px, 2.4vh, 32px);
   width: 100%;
-  max-width: 960px;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
 .hero {
-  width: min(820px, 100%);
+  width: min(840px, 100%);
   text-align: center;
 }
 
 .hero-logo-wrap {
-  margin-bottom: clamp(20px, 2.5vw, 34px);
+  margin-bottom: clamp(10px, 1.5vw, 20px);
   display: flex;
   justify-content: center;
 }
@@ -312,7 +312,7 @@ a.lang-opt:hover {
 
 .hero-logo-mark {
   display: block;
-  width: clamp(40px, calc(32px + 2.7vw), 84px);
+  width: clamp(36px, calc(28px + 2.2vw), 72px);
   height: auto;
   aspect-ratio: 242 / 232;
   flex-shrink: 0;
@@ -333,13 +333,13 @@ a.lang-opt:hover {
   font-weight: 650;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin: 0 0 clamp(12px, 1.4vw, 18px);
+  margin: 0 0 clamp(8px, 1vw, 14px);
   display: inline-block;
 }
 
 h1 {
-  margin: clamp(12px, 1.6vw, 20px) 0 clamp(16px, 2vw, 24px);
-  font-size: clamp(28px, calc(24px + 1.4vw), 50px);
+  margin: clamp(6px, 1vw, 12px) 0 clamp(8px, 1.2vw, 14px);
+  font-size: clamp(26px, calc(22px + 1.3vw), 46px);
   font-weight: 530;
   line-height: 1.12;
   letter-spacing: -0.035em;
@@ -347,11 +347,11 @@ h1 {
 }
 
 .intro {
-  width: min(600px, 100%);
+  width: min(680px, 100%);
   margin: 0 auto;
   color: var(--muted);
-  font-size: clamp(16px, calc(15px + 0.35vw), 19px);
-  line-height: 1.6;
+  font-size: clamp(15px, calc(14px + 0.3vw), 17.5px);
+  line-height: 1.55;
   font-weight: 400;
 }
 
@@ -360,7 +360,7 @@ h1 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: clamp(16px, 1.8vw, 24px);
   text-align: left;
 }
 
@@ -368,7 +368,7 @@ h1 {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 12px;
-  padding: 28px 24px;
+  padding: clamp(14px, 1.6vh, 18px) clamp(16px, 1.6vw, 20px);
   box-shadow: var(--shadow-card);
   transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease, border-color 0.22s ease, background-color 0.22s ease;
   position: relative;
@@ -382,8 +382,8 @@ h1 {
 }
 
 .principle-card h2 {
-  margin: 0 0 12px;
-  font-size: 16px;
+  margin: 0 0 5px;
+  font-size: 15px;
   font-weight: 650;
   letter-spacing: -0.015em;
   color: var(--ink);
@@ -392,8 +392,8 @@ h1 {
 .principle-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 14.5px;
-  line-height: 1.62;
+  font-size: 13.5px;
+  line-height: 1.45;
 }
 
 .principle-card em {
@@ -406,7 +406,7 @@ h1 {
   width: 100%;
   max-width: 1200px;
   margin: auto auto 0;
-  padding: 28px 32px;
+  padding: clamp(14px, 1.8vh, 22px) 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -628,17 +628,17 @@ h1 {
   }
 
   .landing {
-    padding: 44px 20px 64px;
-    gap: 48px;
+    padding: 32px 20px 48px;
+    gap: 36px;
   }
 
   .principles {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
   }
 
   .principle-card {
-    padding: 24px 20px;
+    padding: 18px 20px;
   }
 
   .site-footer {

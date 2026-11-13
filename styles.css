@@ -515,6 +515,13 @@ h1 {
   margin-top: 4px;
 }
 
+.anti-scrape-phone {
+  width: 134px;
+  height: 13px;
+  max-width: 100%;
+  margin-top: 4px;
+}
+
 /* Anti-Scrape Light / Dark Switching */
 .anti-scrape-dark { display: none; }
 .anti-scrape-light { display: block; }

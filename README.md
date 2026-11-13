@@ -9,7 +9,7 @@ A modern, minimal, high-craft website for Amporo Labs GmbH with a landing page, 
   - Default warm linen/cream palette with slate steel blue accent and warm sand framing.
   - Deep charcoal dark mode.
   - Automatic synchronization with `prefers-color-scheme` plus manual toggle persisted in `localStorage`.
-- **Anti-Scraping Protection**: Sensitive contact data (postal address and direct email) are rendered as crisp, high-DPI raster images to prevent crawler and email harvester scraping while maintaining full accessibility.
+- **Anti-Scraping Protection**: Sensitive contact data (postal address, phone number, and direct email) are rendered as crisp, high-DPI raster images to prevent crawler and harvester scraping while maintaining full accessibility.
 - **Multi-Language Localization (EN / DE)**:
   - English default at root (`/`) with clean German subdirectory routing (`/de/`).
   - Segmented header switch (`EN · DE`) with 1:1 context preservation between corresponding pages.
